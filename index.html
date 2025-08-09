@@ -1,165 +1,266 @@
-[⚠️ Suspicious Content] <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>AIR++++ – Breathe Outside. Live Inside.</title>
 <style>
-    body {
-        font-family: 'Segoe UI', Arial, sans-serif;
-        margin: 0;
-        background-color: #f4f7f9;
-        color: #333;
-        line-height: 1.6;
-    }
-    header {
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                    url('https://images.openai.com/thumbnails/url/sXFXO3icu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw6MMHcOD3AMtiw0rvTISXHNcXVydUrNDvKtjHDKNXQ0zHcPTPKIT6sM8y8LNy6LNC8p8chIK8wPzQhSKwYAsP0pMw') no-repeat center/cover;
-        color: white;
-        text-align: center;
-        padding: 120px 20px;
-    }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    position: relative;
+    background: linear-gradient(135deg, #67d8f3 0%, #71e1a4 100%);
+    text-align: center;
+    padding: 100px 20px 140px;
+    color: white;
+    overflow: hidden;
+  }
+  header svg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 200px;
+    opacity: 0.15;
+  }
+  header h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  }
+  header p {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+  }
+  section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+  }
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .feature {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    padding: 30px;
+    flex: 1 1 320px;
+    max-width: 360px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+  .feature svg {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 20px;
+    fill: #33b57a;
+  }
+  .feature h3 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #1f7a34;
+  }
+  .feature p {
+    font-size: 1rem;
+    color: #444;
+  }
+  .pricing {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .price-box {
+    background: white;
+    flex: 1 1 320px;
+    max-width: 400px;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .price-box h3 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #333;
+  }
+  .price {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #28a745;
+    margin: 10px 0 25px;
+  }
+  .price-box p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  .cta {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .cta button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.3rem;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  .cta button:hover {
+    background-color: #1f7a34;
+  }
+  footer {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: #00d4ff;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 720px) {
     header h1 {
-        font-size: 3.5em;
-        margin: 0;
-        font-weight: bold;
+      font-size: 3rem;
     }
     header p {
-        font-size: 1.4em;
-        margin-top: 10px;
-    }
-    section {
-        max-width: 1100px;
-        margin: auto;
-        padding: 50px 20px;
-    }
-    h2 {
-        text-align: center;
-        font-size: 2em;
-        margin-bottom: 40px;
-    }
-    .features {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+      font-size: 1.2rem;
     }
     .feature {
-        background: white;
-        flex: 1 1 calc(50% - 20px);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        text-align: center;
-    }
-    .feature img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        margin-bottom: 15px;
-    }
-    .pricing {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        text-align: center;
+      max-width: 100%;
     }
     .price-box {
-        background: white;
-        flex: 1 1 calc(50% - 20px);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      max-width: 100%;
     }
-    .price {
-        font-size: 2em;
-        color: #28a745;
-        margin: 15px 0;
-        font-weight: bold;
-    }
-    .cta {
-        text-align: center;
-        margin-top: 50px;
-    }
-    .cta button {
-        background: #28a745;
-        color: white;
-        padding: 15px 30px;
-        font-size: 1.2em;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-    }
-    .cta button:hover {
-        background: #1f7a34;
-    }
-    footer {
-        background: #222;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        font-size: 0.9em;
-    }
-    footer a {
-        color: #00d4ff;
-        text-decoration: none;
-    }
+  }
 </style>
 </head>
 <body>
 
 <header>
-    <h1>AIR++++</h1>
-    <p>Breathe Outside. Live Inside.</p>
+  <h1>AIR++++</h1>
+  <p>Breathe Outside. Live Inside.</p>
+  <!-- Abstract Air Flow SVG -->
+  <svg viewBox="0 0 320 200" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#7ce1ff"/>
+        <stop offset="100%" stop-color="#33b57a"/>
+      </linearGradient>
+    </defs>
+    <path fill="url(#grad)" d="M40 160c30-40 90-40 120-5s90 10 110-20" stroke="#1f7a34" stroke-width="2" fill-opacity="0.3" />
+    <circle cx="70" cy="130" r="15" fill="#33b57a" />
+    <circle cx="130" cy="115" r="12" fill="#7ce1ff" />
+    <circle cx="180" cy="130" r="16" fill="#33b57a" />
+  </svg>
 </header>
 
 <section>
-    <h2>How It Works</h2>
-    <div class="features">
-        <div class="feature">
-            <img src="https://images.openai.com/thumbnails/url/AzvSvXicu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw7xTQt19MvOcCsKS83zMU_OD3bXTSoKC0_KcvXMjgh3dYsqLCgKsShPrIx3NysLjihwzTDz1K3wjEyPKFcrBgArKCps" alt="Exterior intake pipes installation">
-            <h3>Custom Exterior Intake</h3>
-            <p>Discreet, weather-resistant air pipes draw in fresh outdoor air.</p>
-        </div>
-        <div class="feature">
-            <img src="https://images.openai.com/thumbnails/url/2nMd-Hicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw42iHcqLUk01c0pKSzwSHd1DvHJKTIPM3SO9ytwLvALLnfSLcp0zghzC3RM1M1y9U5LCc6ojMh1TYxQKwYAwdgpKg" alt="Purification system filters">
-            <h3>Advanced Purification</h3>
-            <p>Multi-layer filters remove dust, allergens, and harmful particles.</p>
-        </div>
-        <div class="feature">
-            <img src="https://images.openai.com/thumbnails/url/nZJpnHicu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4xi3ct9jLJKHeJDA2vMsgIc6rMKnUO9IkwC6sMcvYLzDIpc0wKDPAOCPEN9ysJDHXLNfXTjU8rSDZyCVQrBgASDylg" alt="Indoor purified air flow">
-            <h3>Silent Distribution</h3>
-            <p>Freshly purified air flows seamlessly into your living spaces.</p>
-        </div>
-        <div class="feature">
-            <img src="https://images.openai.com/thumbnails/url/sXFXO3icu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw6MMHcOD3AMtiw0rvTISXHNcXVydUrNDvKtjHDKNXQ0zHcPTPKIT6sM8y8LNy6LNC8p8chIK8wPzQhSKwYAsP0pMw" alt="Healthy indoor living">
-            <h3>Health-First Technology</h3>
-            <p>Perfect for families, allergy sufferers, and anyone who values wellness.</p>
-        </div>
-    </div>
-</section>
+  <h2>How It Works</h2>
+  <div class="features">
 
-<section>
-    <h2>Pricing</h2>
-    <div class="pricing">
-        <div class="price-box">
-            <h3>One-Time Purchase</h3>
-            <div class="price">$5,000 – $9,000</div>
-            <p>Includes full system installation and 1-year warranty.</p>
-        </div>
-        <div class="price-box">
-            <h3>Subscription Plan</h3>
-            <div class="price">$2,000/month</div>
-            <p>Includes installation, maintenance, and free filter replacements.</p>
-        </div>
+    <div class="feature" role="img" aria-label="Custom exterior intake pipes">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <rect x="10" y="14" width="44" height="12" rx="3" ry="3" fill="#33b57a"/>
+        <rect x="8" y="30" width="48" height="20" rx="5" ry="5" fill="#7ce1ff"/>
+        <circle cx="32" cy="40" r="6" fill="#1f7a34"/>
+        <rect x="20" y="52" width="24" height="6" rx="2" ry="2" fill="#33b57a"/>
+      </svg>
+      <h3>Custom Exterior Intake</h3>
+      <p>Discreet, weather-resistant air pipes draw in fresh outdoor air.</p>
     </div>
-    <div class="cta">
-        <button>Contact Us Now</button>
+
+    <div class="feature" role="img" aria-label="Multi-layer air purification filters">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <rect x="12" y="12" width="40" height="40" rx="6" ry="6" fill="#33b57a" />
+        <rect x="18" y="18" width="28" height="28" rx="3" ry="3" fill="#7ce1ff" />
+        <circle cx="32" cy="32" r="9" fill="#1f7a34" />
+        <line x1="24" y1="24" x2="40" y2="40" stroke="#33b57a" stroke-width="3" />
+        <line x1="40" y1="24" x2="24" y2="40" stroke="#33b57a" stroke-width="3" />
+      </svg>
+      <h3>Advanced Purification</h3>
+      <p>Multi-layer filters remove dust, allergens, and harmful particles.</p>
     </div>
+
+    <div class="feature" role="img" aria-label="Silent air distribution system">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path d="M10 40h44v8a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4v-8z" fill="#7ce1ff"/>
+        <rect x="20" y="24" width="24" height="12" rx="3" ry="3" fill="#33b57a"/>
+        <circle cx="32" cy="30" r="7" fill="#1f7a34"/>
+        <path d="M10 40c20-20 40 10 44-8" stroke="#33b57a" stroke-width="3" fill="none" />
+      </svg>
+      <h3>Silent Distribution</h3>
+      <p>Freshly purified air flows seamlessly into your living spaces.</p>
+    </div>
+
+    <div class="feature" role="img" aria-label="Healthy indoor living environment">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="32" r="28" fill="#7ce1ff" />
+        <path d="M20 32c5-10 15-10 17 0" stroke="#33b57a" stroke-width="4" fill="none" />
+        <circle cx="32" cy="32" r="6" fill="#1f7a34" />
+      </svg>
+      <h3>Healthy Living</h3>
+      <p>Improve air quality and breathe easy with cleaner, fresher air.</p>
+    </div>
+
+  </div>
+
+  <h2>Pricing</h2>
+  <div class="pricing">
+    <div class="price-box" aria-label="One time purchase pricing">
+      <h3>One-time Installation</h3>
+      <p class="price">$5,000 - $9,000</p>
+      <p>Get the AIR++++ system installed in your home with lifetime support.</p>
+    </div>
+    <div class="price-box" aria-label="Monthly subscription pricing">
+      <h3>Subscription Plan</h3>
+      <p class="price">$2,000 / month</p>
+      <p>Regular maintenance, filter replacements, and ongoing air quality monitoring.</p>
+    </div>
+  </div>
+
+<div class="cta">
+  <button aria-label="You got trolled by NickyFGaming">You got trolled by NickyFGaming</button>
+</div>
+
 </section>
 
 <footer>
-    &copy; 2025 AIR++++ | Designed for Clean Living | <a href="#">Privacy Policy</a>
+  <p>&copy; 2025 AIR++++ — Fresh Air Systems. Built for your home.</p>
 </footer>
 
 </body>
